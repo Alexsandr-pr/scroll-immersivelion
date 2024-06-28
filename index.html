@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+	<title>ImmersiveLion</title>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240625223654"></script>
+</head>
+	<body class="scroll-block">
+		<div class="wrapper">
+			<header id="header" class="header">
+    <div class="header__screen">
+        <a href="/" class="header__logo header-logo">
+            <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.webp" alt="Logo" class="header-logo__image"></picture>
+            <div class="header-logo__body">
+                <p>ImmersiveLion</p>
+                <p><span>Game That Teaches</span></p>
+            </div>
+        </a>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href='#start' class="menu__link ">Our locations</a>
+                </li>
+                <li class="menu__item">
+                    <a href='#section1' class="menu__link">For students</a>
+                </li>
+                <li class="menu__item">
+                    <a href='#section2' class="menu__link">For parents</a>
+                </li>
+                <li class="menu__item">
+                    <a href='#section3' class="menu__link">For schools & teachers</a>
+                </li>
+            </ul>
+            <ul class="social__list header__social">
+                <li class="social__item">
+                    <a href="/" class="social__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13.0286 2C14.1536 2.003 14.7246 2.009 15.2176 2.023L15.4116 2.03C15.6356 2.038 15.8566 2.048 16.1236 2.06C17.1876 2.11 17.9136 2.278 18.5506 2.525C19.2106 2.779 19.7666 3.123 20.3226 3.678C20.8313 4.17773 21.2248 4.78247 21.4756 5.45C21.7226 6.087 21.8906 6.813 21.9406 7.878C21.9526 8.144 21.9626 8.365 21.9706 8.59L21.9766 8.784C21.9916 9.276 21.9976 9.847 21.9996 10.972L22.0006 11.718V13.028C22.003 13.7574 21.9953 14.4868 21.9776 15.216L21.9716 15.41C21.9636 15.635 21.9536 15.856 21.9416 16.122C21.8916 17.187 21.7216 17.912 21.4756 18.55C21.2248 19.2175 20.8313 19.8223 20.3226 20.322C19.8228 20.8307 19.2181 21.2242 18.5506 21.475C17.9136 21.722 17.1876 21.89 16.1236 21.94L15.4116 21.97L15.2176 21.976C14.7246 21.99 14.1536 21.997 13.0286 21.999L12.2826 22H10.9736C10.2438 22.0026 9.51409 21.9949 8.78457 21.977L8.59057 21.971C8.35318 21.962 8.11584 21.9517 7.87857 21.94C6.81457 21.89 6.08857 21.722 5.45057 21.475C4.7834 21.2241 4.17901 20.8306 3.67957 20.322C3.17051 19.8224 2.77668 19.2176 2.52557 18.55C2.27857 17.913 2.11057 17.187 2.06057 16.122L2.03057 15.41L2.02557 15.216C2.00713 14.4868 1.9988 13.7574 2.00057 13.028V10.972C1.9978 10.2426 2.00514 9.5132 2.02257 8.784L2.02957 8.59C2.03757 8.365 2.04757 8.144 2.05957 7.878C2.10957 6.813 2.27757 6.088 2.52457 5.45C2.77626 4.7822 3.17079 4.17744 3.68057 3.678C4.17972 3.16955 4.78376 2.77607 5.45057 2.525C6.08857 2.278 6.81357 2.11 7.87857 2.06C8.14457 2.048 8.36657 2.038 8.59057 2.03L8.78457 2.024C9.51376 2.00623 10.2432 1.99857 10.9726 2.001L13.0286 2ZM12.0006 7C10.6745 7 9.40272 7.52678 8.46503 8.46447C7.52735 9.40215 7.00057 10.6739 7.00057 12C7.00057 13.3261 7.52735 14.5979 8.46503 15.5355C9.40272 16.4732 10.6745 17 12.0006 17C13.3267 17 14.5984 16.4732 15.5361 15.5355C16.4738 14.5979 17.0006 13.3261 17.0006 12C17.0006 10.6739 16.4738 9.40215 15.5361 8.46447C14.5984 7.52678 13.3267 7 12.0006 7ZM12.0006 9C12.3945 8.99993 12.7847 9.07747 13.1487 9.22817C13.5127 9.37887 13.8434 9.5998 14.122 9.87833C14.4007 10.1569 14.6217 10.4875 14.7725 10.8515C14.9233 11.2154 15.001 11.6055 15.0011 11.9995C15.0011 12.3935 14.9236 12.7836 14.7729 13.1476C14.6222 13.5116 14.4013 13.8423 14.1227 14.121C13.8442 14.3996 13.5135 14.6206 13.1496 14.7714C12.7856 14.9223 12.3955 14.9999 12.0016 15C11.2059 15 10.4429 14.6839 9.88025 14.1213C9.31764 13.5587 9.00157 12.7956 9.00157 12C9.00157 11.2044 9.31764 10.4413 9.88025 9.87868C10.4429 9.31607 11.2059 9 12.0016 9M17.2516 5.5C16.92 5.5 16.6021 5.6317 16.3677 5.86612C16.1333 6.10054 16.0016 6.41848 16.0016 6.75C16.0016 7.08152 16.1333 7.39946 16.3677 7.63388C16.6021 7.8683 16.92 8 17.2516 8C17.5831 8 17.901 7.8683 18.1355 7.63388C18.3699 7.39946 18.5016 7.08152 18.5016 6.75C18.5016 6.41848 18.3699 6.10054 18.1355 5.86612C17.901 5.6317 17.5831 5.5 17.2516 5.5Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="/" class="social__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a  data-da=".header__menu,487.98, 1" href="https://wa.me/19842972334" class="header__button ">WhatsApp us</a>
+        <button class="icon-menu ">
+            <span></span>
+        </button>
+    </div>
+</header>
+			<main class="main">
+				<button class="button-news"><span>NEWS</span></button>
+				<div  class="main__block main-block">
+					<video id="video"  muted  autoplay="true" loop src="img/trailer/Trailer_1.9_vertical_720.mp4"></video>
+					<div class="main-block__container">
+						<div class="main-block-button active">
+							<a data-modal href="/" class=" button">
+								<span>JOIN FOR FREE</span>
+								<img src="img/icon/arrow-insert.svg" alt="arrow ">
+							</a>
+						</div>
+						<button class="button-bottom">
+							<svg xmlns="http://www.w3.org/2000/svg" width="39" height="19" viewBox="0 0 39 19" fill="none">
+								<path d="M35.9756 0.515618L20.7494 14.3486C20.4172 14.652 19.9687 14.8222 19.5014 14.8222C19.0341 14.8222 18.5856 14.652 18.2534 14.3486L3.02389 0.518618C2.68961 0.215391 2.23968 0.0454817 1.77101 0.0454817C1.30234 0.0454817 0.852416 0.215391 0.518135 0.518618C0.353528 0.666749 0.222708 0.843796 0.133386 1.03933C0.0440642 1.23486 -0.00195312 1.44491 -0.00195312 1.65712C-0.00195312 1.86932 0.0440642 2.07938 0.133386 2.27491C0.222708 2.47044 0.353528 2.64749 0.518135 2.79562L15.7411 16.6256C16.7438 17.5344 18.0929 18.0436 19.4981 18.0436C20.9034 18.0436 22.2524 17.5344 23.2551 16.6256L38.4781 2.79562C38.6432 2.64744 38.7745 2.47021 38.8641 2.2744C38.9537 2.07859 38.9999 1.86818 38.9999 1.65562C38.9999 1.44305 38.9537 1.23264 38.8641 1.03684C38.7745 0.841028 38.6432 0.663796 38.4781 0.515618C38.1439 0.212391 37.6939 0.0424805 37.2253 0.0424805C36.7566 0.0424805 36.3067 0.212391 35.9724 0.515618" fill="#FFB400"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="preloader">
+					
+					<div class="preloader__title">
+						the game that <span>teaches</span>
+					</div>
+					<div class="preloader__loading">
+						<div class="preloader__loading-image">
+							<img src="img/preloader/preloader-image.svg" alt="Loading">
+						</div>
+						
+						Loading...
+					</div>
+				</div>
+
+
+				<div class="modal-news active">
+					<div class="modal-news__header">
+						<h2 class="modal-news__title">NEWS</h2>
+						<button class="modal-news__close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M12 12L7 7M12 12L17 17M12 12L17 7M12 12L7 17" stroke="#1F1E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+
+					</div>
+					<div class="modal-news__block">
+						<ul class="modal-news__list">
+							<li class="modal-news__item">
+								<span class="modal-news__date">
+									07/30/2024
+								</span>
+								<div class="modal-news__text">
+									Geography class with Andy starts in Australian desert location 
+									on July 30th, 9:30AM CDT. 
+									More details in our <a href="/">Facebook</a>
+								</div>
+							</li>
+							<li class="modal-news__item">
+								<span class="modal-news__date">
+									08/03/2024
+								</span>
+								<div class="modal-news__text">
+									Our team welcomes 
+									all newcomers for our annual parents summit. We meet 
+									in Viking Village conference room. You can also connect from the outside of the virtual school building using <a href="">this link</a>
+								</div>
+							</li>
+							<li class="modal-news__item">
+								<span class="modal-news__date">
+									08/05/2024
+								</span>
+								<div class="modal-news__text">
+									Two new locations are now available for all visitors: <a href="/">Medieval Village</a> and <a href="/">Venice</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<section id="start" class="main__slider main-slider">
+					<div class="main-slider__container">
+						<h1 class="main-slider__title">
+							OUR <span>locations</span>
+						</h1>
+						
+						<div class="main-slider__swiper swiper">
+							<div class="main-slider__wrapper swiper-wrapper">
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  autoplay muted src="img/gif/01.gif.mp4"></video>
+									</div>
+									
+								</div>
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  src="img/gif/02.gif.mp4"></video>
+									</div>
+									
+								</div>
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  src="img/gif/03.gif.mp4"></video>
+									</div>
+									
+								</div>
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  src="img/gif/04.gif.mp4"></video>
+									</div>
+									
+								</div>
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  src="img/gif/05.gif.mp4"></video>
+									</div>
+									
+								</div>
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__video">
+										<video  src="img/gif/06.gif.mp4"></video>
+									</div>
+									
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+					<div class="thumb__screen">
+						<div class="swiper-button__prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+								<path d="M5.72803 16L17.0507 4.36396C17.1439 4.27019 17.2176 4.15886 17.2675 4.03642C17.3174 3.91397 17.3426 3.78285 17.3415 3.65063C17.3404 3.51841 17.3131 3.38772 17.2611 3.26612C17.2092 3.14453 17.1336 3.03444 17.0389 2.94223C16.9441 2.85002 16.832 2.77752 16.709 2.72892C16.5861 2.68033 16.4547 2.6566 16.3225 2.65912C16.1903 2.66163 16.0599 2.69034 15.9388 2.74358C15.8178 2.79683 15.7085 2.87354 15.6174 2.96929L3.61736 15.3026C3.43573 15.4893 3.33411 15.7395 3.33411 16C3.33411 16.2604 3.43573 16.5106 3.61736 16.6973L15.6174 29.0306C15.7085 29.1264 15.8178 29.2031 15.9388 29.2563C16.0599 29.3096 16.1903 29.3383 16.3225 29.3408C16.4547 29.3433 16.5861 29.3196 16.709 29.271C16.832 29.2224 16.9441 29.1499 17.0389 29.0577C17.1336 28.9655 17.2092 28.8554 17.2611 28.7338C17.3131 28.6122 17.3404 28.4815 17.3415 28.3493C17.3426 28.2171 17.3174 28.0859 17.2675 27.9635C17.2176 27.8411 17.1439 27.7297 17.0507 27.636L5.72803 16Z" fill="#B3B3B3"/>
+							</svg>
+						</div>
+							
+						<div class="main-slider-thumb__swiper swiper">
+							<div class="main-slider-thumb__wrapper swiper-wrapper">
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/01.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										Learning in class without getting off the couch
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/02.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										Masterpieces of world museums at your home
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/03.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										Astronomical laboratory on a space station
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/04.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										Studying Scandinavian mythology directly with the Vikings
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/05.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										An ancient castle shrouded in legends
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+								<div class="main-slider-thumb__slide swiper-slide">
+									<div class="main-slider-thumb__video">
+										<video  src="img/gif/06.gif.mp4"></video>
+									</div>
+									<div class="main-slider-thumb__text">
+										Class of ancient history in the midst of Ancient Greece
+										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+											<path d="M0.473919 7.87461L7.19459 1.14128L0.999918 1.14128V0.474609L8.33325 0.474609L8.33325 7.80794H7.66659L7.66659 1.61261L0.933251 8.33328L0.473919 7.87461Z" fill="#FFC107" stroke="#FFC107" stroke-width="0.5"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+						<div class="swiper-button__next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+								<path d="M26.2701 16L14.9475 27.636C14.8543 27.7298 14.7806 27.8411 14.7306 27.9636C14.6807 28.086 14.6556 28.2172 14.6567 28.3494C14.6578 28.4816 14.6851 28.6123 14.737 28.7339C14.789 28.8555 14.8645 28.9656 14.9593 29.0578C15.0541 29.15 15.1662 29.2225 15.2891 29.2711C15.4121 29.3197 15.5435 29.3434 15.6757 29.3409C15.8079 29.3384 15.9383 29.3097 16.0593 29.2564C16.1804 29.2032 16.2896 29.1265 16.3808 29.0307L28.3808 16.6974C28.5624 16.5107 28.6641 16.2605 28.6641 16C28.6641 15.7396 28.5624 15.4894 28.3808 15.3027L16.3808 2.96937C16.2896 2.87362 16.1804 2.79691 16.0593 2.74367C15.9383 2.69043 15.8079 2.66172 15.6757 2.6592C15.5435 2.65668 15.4121 2.68041 15.2891 2.729C15.1662 2.7776 15.0541 2.8501 14.9593 2.94231C14.8645 3.03452 14.789 3.14461 14.737 3.2662C14.6851 3.3878 14.6578 3.51849 14.6567 3.65071C14.6556 3.78293 14.6807 3.91406 14.7306 4.0365C14.7806 4.15894 14.8543 4.27027 14.9475 4.36404L26.2701 16Z" fill="#B3B3B3"/>
+							</svg>
+						</div>
+					</div>
+				</section>
+
+				
+				
+				<div id="section1" class="">
+					<div  class="section-text section1" >
+						<div class="section-text__container">
+							<h2 class="section-text__title">learning is now an <span>adventure</span></h2>
+						</div>
+					</div>
+	
+	
+					<div style="height: 822px;"  class="main__content content-block content-block-adventure">
+						<div class="content-block__container">
+							<div class="content-block__body">
+								<p>School is no longer boring. Just launch and enter — here begins a magical world where learning is as interesting and fun as playing. And it's also beneficial.</p>
+							</div>
+							<div class="content-block__button">
+								<a data-modal href="/" class=" button">
+									<span>Let's try</span>
+									<img loading="lazy" src="img/icon/arrow-insert.svg" alt="arrow ">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="section2" class="">
+					<div  class="section-text section2">
+						<div class="section-text__container">
+							<h2 class="section-text__title">Replace harmful games with <span>educational</span> ones</h2>
+						</div>
+					</div>
+					<div style="height: 822px;" class="main__content content-block content-block-educational">
+						<div class="content-block__container">
+							<div class="content-block__body">
+								<p>We placed the school inside a game, and now the game truly teaches.
+									Don't try 
+									to change the world. Replace harmful games with beneficial ones.</p>
+							</div>
+							<div class="content-block__button">
+								<a data-modal href="/" class=" button">
+									<span>Let's try</span>
+									<img loading="lazy" src="img/icon/arrow-insert.svg" alt="arrow ">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section3"  class="">
+					<div class="section-text section3">
+						<div class="section-text__container">
+							<h2 class="section-text__title"><span>Virtual classes</span> for real learning</h2>
+						</div>
+					</div>
+					<div  style="height: 822px;"  class="main__content content-block content-block-virtual">
+						<div class="content-block__container">
+							<div class="content-block__body">
+								<p>Hogwarts for your school. Teach classes in a magical world, place your interactive materials, virtual labs, 
+									and educational locations. A whole world at the service 
+									of your teachers.</p>
+							</div>
+							<div class="content-block__button">
+								<a data-modal href="/" class=" button">
+									<span>Let's try</span>
+									<img loading="lazy" src="img/icon/arrow-insert.svg" alt="arrow ">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+				
+
+				<div class="modal__wrapper">
+					<div class="modal__body modal-body">
+						<button class="modal__close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+								<path d="M21.9997 22.0002L12.833 12.8335M21.9997 22.0002L31.1663 31.1668M21.9997 22.0002L31.1663 12.8335M21.9997 22.0002L12.833 31.1668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+						<h2 class="modal-body__title">
+							To attend the virtual school ImmersiveLion, a computer running <span>Windows</span> 
+							with sufficient RAM, CPU performance, and graphics card capabilities is required.
+						</h2>
+						<ul class="modal-body__list">
+							<li class="modal-body__item">
+								<div class="modal-body__text">
+									If you have a relatively modern computer, you can simply install 
+									the school 
+								</div>
+								<a href="https://downloader.multi-portal.org/InstallImmersiveLion.bat" class="modal-body__button" target="_blank">Install now</a>
+							</li>
+							<li class="modal-body__item">
+								<div class="modal-body__text">
+									If technical difficulties are causing problems with attending 
+									the school, contact us, and we will help!
+								</div>
+								<a href="https://wa.me/19842972334"  class="modal-body__button">WhatsApp us</a>
+							</li>
+							<li class="modal-body__item">
+								<div class="modal-body__text">
+									If you have a device 
+									on another platform, 
+									or your computer is not powerful enough, leave us your email, and we will provide you with the necessary equipment.
+								</div>
+								<form action="#" class="modal-body__form">
+									<input required placeholder="Your email" name="email" type="email" class="modal-body__input">
+									<button type="submit" class="modal-body__button">Send</button>
+								</form>
+								<div class="modal-body__politics">
+									By clicking the Send, you agree to our <a href="/">Privacy Policy.</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</main>
+			<footer class="footer">
+    <div class="footer__container">
+        <a class="footer__link" href="#" >1020 Southhill Drive, Cary, NC 27513, USA</a>
+        <a  href="https://wa.me/19842972334" class="footer__button">WhatsApp us</a>
+        <ul class="social__list footer__social">
+            <li class="social__item">
+                <a href="/" class="social__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13.0286 2C14.1536 2.003 14.7246 2.009 15.2176 2.023L15.4116 2.03C15.6356 2.038 15.8566 2.048 16.1236 2.06C17.1876 2.11 17.9136 2.278 18.5506 2.525C19.2106 2.779 19.7666 3.123 20.3226 3.678C20.8313 4.17773 21.2248 4.78247 21.4756 5.45C21.7226 6.087 21.8906 6.813 21.9406 7.878C21.9526 8.144 21.9626 8.365 21.9706 8.59L21.9766 8.784C21.9916 9.276 21.9976 9.847 21.9996 10.972L22.0006 11.718V13.028C22.003 13.7574 21.9953 14.4868 21.9776 15.216L21.9716 15.41C21.9636 15.635 21.9536 15.856 21.9416 16.122C21.8916 17.187 21.7216 17.912 21.4756 18.55C21.2248 19.2175 20.8313 19.8223 20.3226 20.322C19.8228 20.8307 19.2181 21.2242 18.5506 21.475C17.9136 21.722 17.1876 21.89 16.1236 21.94L15.4116 21.97L15.2176 21.976C14.7246 21.99 14.1536 21.997 13.0286 21.999L12.2826 22H10.9736C10.2438 22.0026 9.51409 21.9949 8.78457 21.977L8.59057 21.971C8.35318 21.962 8.11584 21.9517 7.87857 21.94C6.81457 21.89 6.08857 21.722 5.45057 21.475C4.7834 21.2241 4.17901 20.8306 3.67957 20.322C3.17051 19.8224 2.77668 19.2176 2.52557 18.55C2.27857 17.913 2.11057 17.187 2.06057 16.122L2.03057 15.41L2.02557 15.216C2.00713 14.4868 1.9988 13.7574 2.00057 13.028V10.972C1.9978 10.2426 2.00514 9.5132 2.02257 8.784L2.02957 8.59C2.03757 8.365 2.04757 8.144 2.05957 7.878C2.10957 6.813 2.27757 6.088 2.52457 5.45C2.77626 4.7822 3.17079 4.17744 3.68057 3.678C4.17972 3.16955 4.78376 2.77607 5.45057 2.525C6.08857 2.278 6.81357 2.11 7.87857 2.06C8.14457 2.048 8.36657 2.038 8.59057 2.03L8.78457 2.024C9.51376 2.00623 10.2432 1.99857 10.9726 2.001L13.0286 2ZM12.0006 7C10.6745 7 9.40272 7.52678 8.46503 8.46447C7.52735 9.40215 7.00057 10.6739 7.00057 12C7.00057 13.3261 7.52735 14.5979 8.46503 15.5355C9.40272 16.4732 10.6745 17 12.0006 17C13.3267 17 14.5984 16.4732 15.5361 15.5355C16.4738 14.5979 17.0006 13.3261 17.0006 12C17.0006 10.6739 16.4738 9.40215 15.5361 8.46447C14.5984 7.52678 13.3267 7 12.0006 7ZM12.0006 9C12.3945 8.99993 12.7847 9.07747 13.1487 9.22817C13.5127 9.37887 13.8434 9.5998 14.122 9.87833C14.4007 10.1569 14.6217 10.4875 14.7725 10.8515C14.9233 11.2154 15.001 11.6055 15.0011 11.9995C15.0011 12.3935 14.9236 12.7836 14.7729 13.1476C14.6222 13.5116 14.4013 13.8423 14.1227 14.121C13.8442 14.3996 13.5135 14.6206 13.1496 14.7714C12.7856 14.9223 12.3955 14.9999 12.0016 15C11.2059 15 10.4429 14.6839 9.88025 14.1213C9.31764 13.5587 9.00157 12.7956 9.00157 12C9.00157 11.2044 9.31764 10.4413 9.88025 9.87868C10.4429 9.31607 11.2059 9 12.0016 9M17.2516 5.5C16.92 5.5 16.6021 5.6317 16.3677 5.86612C16.1333 6.10054 16.0016 6.41848 16.0016 6.75C16.0016 7.08152 16.1333 7.39946 16.3677 7.63388C16.6021 7.8683 16.92 8 17.2516 8C17.5831 8 17.901 7.8683 18.1355 7.63388C18.3699 7.39946 18.5016 7.08152 18.5016 6.75C18.5016 6.41848 18.3699 6.10054 18.1355 5.86612C17.901 5.6317 17.5831 5.5 17.2516 5.5Z" fill="white"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="/" class="social__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" fill="white"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+		</div>
+
+		<script src="https://immersivelion.com/ReForce.js"></script>
+		<script>
+			var url = "/"
+			var to = "admin@immersivelion.com"
+			var from = "web@immersivelion.com"
+			var text = "PC request from www.immersivelion.com"
+			const forms = document.querySelectorAll("form")
+			forms.forEach(form => {
+				form.addEventListener('submit', (e) => {
+					e.preventDefault();
+					const email = form.querySelector('input[name="email"]').value;
+					sendEmail(url, to, from, text, email)
+					form.reset();
+				});
+			})
+		</script>
+
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240625223654"
+			/>
+		<script src="js/script.js"></script>
+	</body>
+</html>
